@@ -3,5 +3,5 @@ x = 5
 print("Hossam",'Mustafa',x)
 print(type(x)==float)
 print(id(x))
-x= x
+x= 10
 print(x)
