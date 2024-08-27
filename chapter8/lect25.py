@@ -1,3 +1,4 @@
+import random
 class Student:
     count =0 # class variable - static in java
     """def __init__(self):
@@ -23,8 +24,13 @@ class Student:
 
 class BSStudent(Student):
     def __init__(self,id,name,spec,gpa):
-        self.id = id
-        self.name= name
-        self.spec=spec
-        #super().__init__(id,name,spec)
+        super().__init__(id,name,spec)
         self.gpa = gpa
+        self.email=""
+        self.password = ""
+    def __str__(self):
+        return f'{super().__str__()},{self.email},{self.password},{self.gpa}'
+    def generate_email(self):
+        self.email= f'{self.name.lower()}@uop.edu.jo'
+    def generate_password(self):
+        self.password= f'{self.name.lower()[0]}@{random.randint(100,999)}'

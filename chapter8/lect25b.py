@@ -10,7 +10,7 @@ s1 = Student(spec="IS", id= 20220, name="Saed")
 s2 = BSStudent(spec="DSAI", id= 20203, name="Jihad",gpa=3.5)
 print(s1)
 
-del s1
+#del s1
 print(s2)
 
 #print(s1 == s2)
